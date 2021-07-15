@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+	animation: changeBg 30s infinite linear;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@keyframes changeBg{
+	0%{
+		background-image: url("tajmahal.jpg");
+	}
+	25%{
+	 background-image: url("DARJELLING.jpg");
+	}
+	45%{
+		background-image:url("amberfort.jpg");
+	}
+	60%{
+		background-image: url("lotustemple.jpg");
+	}
+	84%{
+		background-image: url("kerelacoconut.jpg");
+	}
+	100%{
+		background-image: url("bangalorecoffee.jpg");
+	}
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	height: 15vh;
+	background: rgba(0, 0, 0,0.3);
+	color: white;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.logo{
+	width: 25%;
+	text-align: center;
+}
+
+.menu{
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu a{
+	width: 25%;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+main{
+	height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+h3{
+	font-size: 35px;
+	font-weight: 200;
+	letter-spacing: 3px;
+	color:white;
+	text-shadow: -4px 1px 1px black;
+}
+
+section h1{
+	text-transform: uppercase;
+	margin: 20px 0px 30px 0px;
+	color: white;
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 2px 1px 5px black;
+}
+
+section p{
+	font-size: 25px;
+	margin-bottom: 25px;
+	word-spacing: 2px;
+	text-shadow: 1px 1px 1px black;
+	color: white;
+}
+
+section a{
+	text-decoration: none;
+	color: white;
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+}
+
+.btnone{
+	background: white;
+	color: #000;
+}
+
+.btntwo{
+	background: #00B894;
+}
+
+nav .menu a:first-child{
+	color: #00B894;
+}
+
+.change_content:after{
+	content: "";
+	animation: changetext 30s infinite linear;
+	color: #00B894;
+}
+
+@keyframes changetext{
+	0%{content: "AGRA";}
+	25%{content: "DARJEELING";}
+	45%{content: "JAIPUR";}
+	60%{content: "DELHI";}
+	84%{content: "KERALA";}
+	100%{content: "BANGALORE";}
+}
+
+.btnone:hover{
+	background: #00B894;
+	color: white;
+}
+
+.btntwo:hover{
+	background: #fff;
+	color: #000;
+}
+
+
